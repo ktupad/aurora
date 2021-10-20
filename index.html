@@ -9,8 +9,10 @@
 </head>
 <body>
 <div id="content"></div>
+<div class="auroral-stars"></div>
 <script type="text/javascript" src="aurora.js"></script>
 <script>
+aurora.view();
 arr=aurora.arr;
 out ='<div class="container">';
 for(i in arr){
@@ -21,4 +23,3 @@ out +='<div class="box '+arr[i]+'"  onclick="aurora.set(\''+arr[i]+'\')" >\
 out +='</div>';
 document.getElementById('content').innerHTML=out;
 </script>
-<div class="auroral-stars"></div>
