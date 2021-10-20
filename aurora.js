@@ -13,8 +13,8 @@ var bg=window.localStorage.getItem('aurora-bg');
 if(!bg){bg='aurora-outer'}
 out ='<div id="aurora" class="aurora-bg '+bg+'"><div class="aurora-inner"></div></div> \
 <div class="auroral-stars"></div> \
-<a class="prev" onclick="aurora.getaurora(-1)">&#10094;</a> \
-<a class="next" onclick="aurora.getaurora(1)">&#10095;</a> ';
+<a class="prev" onclick="aurora.auroraGet(-1)">&#10094;</a> \
+<a class="next" onclick="aurora.auroraGet(1)">&#10095;</a> ';
 var e = document.createElement("div");
 e.innerHTML = out;
 document.getElementsByTagName('body')[0].appendChild(e);
